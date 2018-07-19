@@ -107,9 +107,12 @@ venv.bak/
 #url_sound
 from selenium import webdriver
 import time
+
 #TODO to take it from arg parse argument
 driver = webdriver.Chrome('D:\Новая папка\chromedriver.exe')
 driver.get('https://www.audioknigi-online.com/after-3.html')
+
+#TODO to check if there is any selenium solution to notify about page load finalization and integrate this call instead of time.sleep
 time.sleep(5)
 utt = list(map(lambda el:el.get_attribute('src'),driver.find_elements_by_tag_name('audio')))
 print(utt)
