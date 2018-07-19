@@ -107,7 +107,7 @@ venv.bak/
 #url_sound
 from selenium import webdriver
 import time
-
+#TODO to take it from arg parse argument
 driver = webdriver.Chrome('D:\Новая папка\chromedriver.exe')
 driver.get('https://www.audioknigi-online.com/after-3.html')
 time.sleep(5)
