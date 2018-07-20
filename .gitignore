@@ -105,6 +105,8 @@ venv.bak/
 
 
 #url_sound
+#TODO: Move making sequence logic to implementation of Links interface
+
 from selenium import webdriver
 import time
 
